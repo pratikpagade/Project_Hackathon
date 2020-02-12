@@ -1,0 +1,7 @@
+.tr:nth-child(-n-3) {
+    background-color: palegoldenrod;
+}
+
+.table{
+    background-color: palegoldenrod
+}

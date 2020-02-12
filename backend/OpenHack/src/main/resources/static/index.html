@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase.js"></script>
+</head>
+<body>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCvVM8QWicNyhNCSJCjvv-O463bG2s_Xwg",
+    authDomain: "openhack-403f7.firebaseapp.com",
+    databaseURL: "https://openhack-403f7.firebaseio.com",
+    projectId: "openhack-403f7",
+    storageBucket: "openhack-403f7.appspot.com",
+    messagingSenderId: "706489530077"
+  };
+  firebase.initializeApp(config);
+  
+  firebase.auth().signInWithEmailAndPassword('kritijar@gmail.com', '12345678').catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // ...
+	});
+  
+  var actionCodeSettings = {
+		  // URL you want to redirect back to. The domain (www.example.com) for this
+		  // URL must be whitelisted in the Firebase Console.
+		  url: 'http://localhost:8080/finishSignUp?cartId=1234',
+		  // This must be true.
+		  handleCodeInApp: true
+		};
+  
+  firebase.auth().sendSignInLinkToEmail("kritijar@gmail.com", actionCodeSettings)
+  .then(function() {
+    // The link was successfully sent. Inform the user.
+    // Save the email locally so you don't need to ask the user for it again
+    // if they open the link on the same device.
+    window.localStorage.setItem('emailForSignIn', email);
+  })
+  .catch(function(error) {
+    // Some error occurred, you can inspect the code: error.code
+  });
+</script>
+
+</body>
+</html>

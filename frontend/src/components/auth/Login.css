@@ -1,0 +1,71 @@
+.hackathon-header {
+  font-size: "32px";
+  font-weight: 100;
+  font-family: "OpenSans";
+  float: left;
+  color: "39424E";
+  background-color: "blue";
+}
+
+.header {
+  color: #979fa8;
+  font-style: italic;
+  font-family: OpenSans;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.form-label {
+  font-family: OpenSans;
+
+  margin-bottom: 5px;
+  font-size: 14px;
+
+  box-sizing: border-box;
+  float: left;
+  color: #39424e;
+  padding-top: 5px;
+  display: block;
+  font-weight: 600;
+}
+.form-link {
+  font-family: OpenSans;
+
+  margin-bottom: 5px;
+  font-size: 14px;
+
+  box-sizing: border-box;
+  float: left;
+
+  padding-top: 5px;
+  display: block;
+  font-weight: 600;
+}
+.form-input {
+  width: 300px;
+  border: 1px solid #c2c7d0;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  color: #39424e;
+
+  font-size: 1em;
+  line-height: 1.5em;
+  float: right;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+}
+.inputspan {
+  width: 18.75%;
+}
+.form-submit {
+  font-family: "SourceCodePro";
+  font-weight: 500 !important;
+  color: #fff;
+  background: #2ec866;
+  border: 1px solid #13a853;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 150px;
+  font-size: 14px;
+  width: 150px;
+}

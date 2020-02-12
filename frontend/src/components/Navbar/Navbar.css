@@ -1,0 +1,12 @@
+.navbar {
+    margin-bottom: 0;
+  }
+  
+  .nav-item {
+    padding-left: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
